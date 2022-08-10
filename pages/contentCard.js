@@ -28,7 +28,7 @@ export default function ContentCard() {
       'title': 'Barrows',
       'year': '2022',
       'description': 'Vendor voucher app',
-      'link': 'www.google.com',
+      'link': 'https://www.notion.so/lukestephens/Barrows-UI-04ff0d3d136844d5b21493a0dc1928b2',
       'image': '/images/cover/barrows.png',
       'colour': 'bg-yellow-500/50',
     }
@@ -78,12 +78,12 @@ export default function ContentCard() {
              className={`relative flex h-full w-full justify-between `}>
           {
             x.map(x => {
-              return <div id={x.title} key={Math.random()}
+              return <a id={x.title} key={Math.random()} href={x.link}
                           className={`relative mr-10 w-[300px] h-full -rotate-3 
                            rounded-md transition overflow-hidden ease-in-out duration-300
                             hover:scale-110 hover:cursor-pointer`}>
                 <Image src={x.image} objectFit={'cover'} layout={"fill"} alt={x.title}/>
-              </div>
+              </a>
             })
           }
         </div>
@@ -91,12 +91,12 @@ export default function ContentCard() {
              className={`relative flex h-full  w-full justify-between`}>
           {
             x.map(x => {
-              return <div id={x.title} key={Math.random()}
+              return <a id={x.title} key={Math.random()} href={x.link}
                           className={`relative mr-10 w-[300px] h-full -rotate-3 
                            rounded-md transition overflow-hidden ease-in-out duration-300
                             hover:scale-110 hover:cursor-pointer`}>
                 <Image src={x.image} objectFit={'cover'} layout={"fill"} alt={x.title}/>
-              </div>
+              </a>
             })
           }
         </div>
