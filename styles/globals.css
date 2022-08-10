@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Sacramento';
+    src: local('Sacramento'), url('/fonts/Sacramento-Regular.ttf'), format('ttf');
+}
+
 
 body {
     background-image: url("/images/bg3.png");
